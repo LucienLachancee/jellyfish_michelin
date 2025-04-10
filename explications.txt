@@ -1,0 +1,95 @@
+Métriques
+Total Clics :
+
+Cette métrique affiche le total des clics générés pendant la période sélectionnée. Elle est calculée comme la somme des clics dans le dataframe filtré par date.
+
+Pourquoi c'est important : Le nombre de clics est une mesure clé de l'engagement avec les pages de résultats de recherche ou les publicités. Un nombre élevé de clics peut indiquer que les utilisateurs sont intéressés par les pneus Michelin.
+
+Total Impressions :
+
+Cette métrique affiche le total des impressions générées pendant la période sélectionnée. Elle est calculée comme la somme des impressions dans le dataframe filtré par date.
+
+Pourquoi c'est important : Les impressions indiquent combien de fois les pages des pneus Michelin ont été affichées dans les résultats de recherche ou dans les publicités. Un grand nombre d'impressions avec un faible nombre de clics peut indiquer que la visibilité est bonne, mais que l'engagement est faible.
+
+CTR Moyen (Click-Through Rate) :
+
+Le CTR est la proportion des clics par rapport aux impressions. Il est calculé comme la moyenne du CTR dans les données filtrées.
+
+Pourquoi c'est important : Le CTR est un indicateur clé de l'efficacité des pages dans les résultats de recherche ou les publicités. Un CTR élevé signifie que le contenu est pertinent et attire l'attention des utilisateurs.
+
+Position Moyenne :
+
+Cette métrique représente la position moyenne de la page dans les résultats de recherche. Elle est calculée comme la moyenne de la position dans les données filtrées.
+
+Pourquoi c'est important : La position moyenne est un indicateur de la visibilité dans les résultats de recherche. Une position moyenne élevée (par exemple, >15) peut signifier que la page est moins visible, ce qui pourrait nuire à l'engagement.
+
+Alertes de Performance
+Si le CTR est inférieur à 2% ou si la position moyenne est supérieure à 15, une alerte est affichée pour signaler des problèmes potentiels avec l'engagement ou la visibilité.
+
+Filtres Utilisés
+Filtre par Période (Date) :
+
+Les utilisateurs peuvent sélectionner une période en choisissant une date de début et de fin dans la barre latérale.
+
+Pourquoi c'est important : Ce filtre permet d'analyser les performances sur une période spécifique et de détecter des tendances ou des anomalies dans les données.
+
+Filtre par Pays :
+
+Les utilisateurs peuvent sélectionner un ou plusieurs pays à analyser. Les données sont filtrées en fonction des pays sélectionnés.
+
+Pourquoi c'est important : Ce filtre permet de visualiser les performances des pneus Michelin dans différents pays. Cela peut aider à identifier des opportunités de marché spécifiques ou des régions où les performances sont plus faibles.
+
+Visualisations et Graphiques
+Répartition des Clics par Pays :
+
+Un graphique à barres montre la répartition des clics par pays, en utilisant les données filtrées par pays.
+
+Pourquoi c'est important : Cela permet de voir quels pays génèrent le plus de clics et où les pneus Michelin ont le plus de succès.
+
+Pages les plus Populaires :
+
+Un tableau affiche les pages les plus populaires, triées par nombre de clics.
+
+Pourquoi c'est important : Cela aide à identifier quelles pages de produit ou catégories de pneus génèrent le plus d'intérêt et d'engagement.
+
+Tendances des Clics au Fil du Temps :
+
+Un graphique linéaire montre l'évolution du nombre de clics au fil du temps, pour la période filtrée.
+
+Pourquoi c'est important : Cela permet d'analyser les variations de performance et d'identifier les tendances, comme une augmentation ou une diminution des clics.
+
+Performances par Type d’Appareil :
+
+Un graphique à barres montre la répartition des clics par type d’appareil (mobile, desktop, etc.).
+
+Pourquoi c'est important : Cela permet d'analyser l'engagement des utilisateurs en fonction de l'appareil utilisé. Par exemple, si une majorité des clics provient des mobiles, il peut être pertinent d'optimiser les pages pour les appareils mobiles.
+
+Analyse des Requêtes Fréquentes :
+
+Un tableau montre les requêtes les plus fréquentes, triées par nombre de clics.
+
+Pourquoi c'est important : Cela permet de voir les termes de recherche les plus populaires et d’optimiser les pages pour ces requêtes.
+
+Performances des Apparences dans les Résultats de Recherche :
+
+Un graphique à barres montre la répartition des clics selon l'apparence dans les résultats de recherche (par exemple, un carrousel, un snippet, etc.).
+
+Pourquoi c'est important : Cela aide à comprendre quel type d'apparence génère le plus de clics et si des optimisations sont possibles dans la présentation des résultats.
+
+Prédiction des Clics Futurs avec Régression Linéaire :
+
+Un modèle de régression linéaire prédit le nombre de clics pour les 10 jours suivants, basé sur l'évolution des clics dans la période sélectionnée.
+
+Pourquoi c'est important : Cela donne une estimation des performances futures et peut aider à la planification de la stratégie de contenu et de publicité.
+
+Tendances du CTR au Fil du Temps :
+
+Un graphique linéaire montre l'évolution du CTR au fil du temps, pour la période filtrée.
+
+Pourquoi c'est important : Cela permet de voir si l'engagement des utilisateurs améliore ou se dégrade au fil du temps.
+
+Tendances de la Position Moyenne au Fil du Temps :
+
+Un graphique linéaire montre l'évolution de la position moyenne au fil du temps.
+
+Pourquoi c'est important : Cela permet de visualiser l'évolution de la visibilité des pneus Michelin dans les résultats de recherche.
