@@ -51,14 +51,14 @@ st.markdown("""
         color: #212529;
     }
     .warning-card {
-        background-color: #FDEBD0;
+        background-color: #212529;
         border-left: 5px solid #F39C12;
         border-radius: 5px;
         padding: 15px;
         margin-bottom: 15px;
     }
     .info-card {
-        background-color: #E9F7EF;
+        background-color: #212529;
         border-left: 5px solid #27AE60;
         border-radius: 5px;
         padding: 15px;
@@ -84,7 +84,7 @@ with st.sidebar:
     selected_category = st.selectbox("Choisir une catégorie de pneu :", categories)
 
 # Chemin vers les fichiers CSV
-base_path = rf"C:\Users\MaximeKHAZNADJI\OneDrive - Sia Partners\data_ia_hetic\michelin\jellyfish_michelin\Data Michelin\Data Michelin\{selected_category}"
+base_path = rf"D:\projects_python\jellyfish_michelin\Data Michelin\{selected_category}"
 
 # Fonction de nettoyage des colonnes contenant des pourcentages concaténés
 def clean_percentage_column(df, column_name):
@@ -120,7 +120,7 @@ def load_data(files, base_path):
         data[key] = df
     
     # Ajouter le fichier Ranking_Sites.xlsx
-    ranking_filepath = r"C:\Users\MaximeKHAZNADJI\OneDrive - Sia Partners\data_ia_hetic\michelin\jellyfish_michelin\Data Michelin\Data Michelin\EV USA Keywords - SEMrush.xlsx"
+    ranking_filepath = r"D:\projects_python\jellyfish_michelin\Data Michelin\EV USA Keywords - SEMrush.xlsx"
     ranking_df = pd.read_excel(ranking_filepath)  # Charge l'Excel avec les colonnes du ranking
     data["ranking"] = ranking_df
     
