@@ -73,7 +73,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<h1 class="main-header">Dashboard de Performance - Pneus Michelin</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">Dashboard de Performance - Michelin</h1>', unsafe_allow_html=True)
 
 # Sélection du dossier de données
 with st.sidebar:
@@ -84,7 +84,7 @@ with st.sidebar:
     selected_category = st.selectbox("Choisir une catégorie de pneu :", categories)
 
 # Chemin vers les fichiers CSV
-base_path = rf"D:\projects_python\jellyfish_michelin\Data Michelin\{selected_category}"
+base_path = rf"C:\Hetic\jellyfish\jellyfish_michelin_local\Data Michelin\{selected_category}"
 
 # Fonction de nettoyage des colonnes contenant des pourcentages concaténés
 def clean_percentage_column(df, column_name):
@@ -120,7 +120,7 @@ def load_data(files, base_path):
         data[key] = df
     
     # Ajouter le fichier Ranking_Sites.xlsx
-    ranking_filepath = r"D:\projects_python\jellyfish_michelin\Data Michelin\EV USA Keywords - SEMrush.xlsx"
+    ranking_filepath = r"C:\Hetic\jellyfish\jellyfish_michelin_local\Data Michelin\EV USA Keywords - SEMrush.xlsx"
     ranking_df = pd.read_excel(ranking_filepath)  # Charge l'Excel avec les colonnes du ranking
     data["ranking"] = ranking_df
     
@@ -155,13 +155,14 @@ if loading_success:
     # Filtrage des données par période
     filtered_dates_df = dates_df[(dates_df['Date'] >= pd.to_datetime(start_date)) & (dates_df['Date'] <= pd.to_datetime(end_date))]
 
-    # Filtre par pays
+    # Filtre par pays - Forcé sur le Mexique
     with st.sidebar:
         st.subheader("Filtrer par pays")
-        countries = pays_df['Pays'].unique()
-        selected_countries = st.multiselect("Sélectionner des pays", countries, default=countries)
+        st.markdown("**Pays sélectionné : Mexique**")
 
-    filtered_country_df = pays_df[pays_df['Pays'].isin(selected_countries)]
+# Filtrer directement sur le pays "Mexique"
+    filtered_country_df = pays_df[pays_df['Pays'] == "Mexique"]
+
 
     # Calcul des KPIs sur les données filtrées
     total_clicks = filtered_dates_df["Clics"].sum()
